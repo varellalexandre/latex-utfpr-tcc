@@ -1,1 +1,4 @@
 utfpr-tcc.pdf
+*.aux
+*.idx
+*.log

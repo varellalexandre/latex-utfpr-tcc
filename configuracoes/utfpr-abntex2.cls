@@ -132,6 +132,17 @@
 \newcommand{\linhapesquisa}[1]{\renewcommand{\imprimirlinhapesquisa}{#1}}
 
 % Comandos de dados - Texto da folha de aprovação
+
+\newcommand{\nomedoautorfolhadeaprovacao}[1]{#1}
+\newcommand{\titulofolhadeaprovacao}[1]{#1}
+\newcommand{\subtitulofolhadeaprovacao}[1]{#1}
+\newcommand{\textofolhadeaprovacao}[1]{#1}
+\newcommand{\localfolhadeaprovacao}[1]{#1}
+\newcommand{\datafolhadeaprovacao}[1]{#1}
+\newcommand{\membroAfolhadeaprovacao}[1]{#1}
+\newcommand{\membroBfolhadeaprovacao}[1]{#1}
+\newcommand{\membroCfolhadeaprovacao}[1]{#1}
+
 \providecommand{\imprimirtextopadraofolhadeaprovacao}{}
 \newcommand{\textopadraofolhadeaprovacao}[1]{\renewcommand{\imprimirtextopadraofolhadeaprovacao}{#1}}
 
@@ -378,6 +389,10 @@
 \newcommand{\imprimirfolhadeaprovacao}
 {%
     \begin{folhadeaprovacao}
+        \begin{center}
+          \bftext \nomedoautorfolhadeaprovacao \\
+          \bftext \titulofolhadeaprovacao : \subtitulofolhadeaprovacao
+        \end{center}
         \vspace*{\fill}
 
         \begin{tabular}{p{.45\textwidth}p{.45\textwidth}}
